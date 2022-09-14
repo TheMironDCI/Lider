@@ -22,8 +22,15 @@ section {
   border: 5px solid red;
   border-bottom-color: black;
   border-right-color: black;
+  transition-duration: 0.5s;
   padding: 30px;
   overflow: hidden;
+}
+#first .slider:hover {
+  border-top-color: black;
+  border-left-color: black;
+  border-bottom-color: red;
+  border-right-color: red;
 }
 #first .slider .carousale {
   height: 500px;
@@ -39,15 +46,29 @@ section {
   border: 5px solid red;
   border-bottom-color: black;
   border-right-color: black;
+  transition-duration: 0.5s;
   padding: 30px;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
+}
+#second .about:hover {
+  border-top-color: black;
+  border-left-color: black;
+  border-bottom-color: red;
+  border-right-color: red;
 }
 
 #third .card {
   border: 5px solid red;
   border-bottom-color: black;
   border-right-color: black;
+  transition-duration: 0.5s;
+}
+#third .card:hover {
+  border-top-color: black;
+  border-left-color: black;
+  border-bottom-color: red;
+  border-right-color: red;
 }
 @media (max-width: 576px) {
   #third .card {
@@ -60,7 +81,14 @@ section {
   border: 5px solid red;
   border-bottom-color: black;
   border-right-color: black;
+  transition-duration: 0.5s;
   padding: 30px;
+}
+#third .pro-color:hover {
+  border-top-color: black;
+  border-left-color: black;
+  border-bottom-color: red;
+  border-right-color: red;
 }
 #third .pro-color img {
   width: 100% !important;

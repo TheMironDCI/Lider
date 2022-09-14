@@ -34,6 +34,13 @@ section {
         border: 5px solid red;
         border-bottom-color: black;
         border-right-color: black;
+        transition-duration: .5s;
+        &:hover {
+            border-top-color: black;
+            border-left-color: black; 
+            border-bottom-color: red;
+            border-right-color: red;
+        }
         padding: 30px;
         overflow: hidden;
         .carousale {
@@ -50,6 +57,13 @@ section {
         border:5px solid red;
         border-bottom-color: black;
         border-right-color: black;
+        transition-duration: .5s;
+        &:hover {
+            border-top-color: black;
+            border-left-color: black; 
+            border-bottom-color: red;
+            border-right-color: red;
+        }
         padding: 30px;
         border-top-right-radius: 100px;
         border-bottom-left-radius: 100px;
@@ -61,6 +75,13 @@ section {
         border:5px solid red;
         border-bottom-color: black;
         border-right-color: black;
+        transition-duration: .5s;
+        &:hover {
+            border-top-color: black;
+            border-left-color: black; 
+            border-bottom-color: red;
+            border-right-color: red;
+        }
         @include mobile {
             margin: 20px auto;
         }
@@ -71,6 +92,13 @@ section {
         border:5px solid red;
         border-bottom-color: black;
         border-right-color: black;
+        transition-duration: .5s;
+        &:hover {
+            border-top-color: black;
+            border-left-color: black; 
+            border-bottom-color: red;
+            border-right-color: red;
+        }
         padding: 30px;
         img {
             width: 100% !important;
