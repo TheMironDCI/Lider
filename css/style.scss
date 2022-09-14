@@ -61,6 +61,9 @@ section {
         border:5px solid red;
         border-bottom-color: black;
         border-right-color: black;
+        @include mobile {
+            margin: 20px auto;
+        }
     }
     .pro-color {
         margin-top: 100px;

@@ -49,6 +49,11 @@ section {
   border-bottom-color: black;
   border-right-color: black;
 }
+@media (max-width: 576px) {
+  #third .card {
+    margin: 20px auto;
+  }
+}
 #third .pro-color {
   margin-top: 100px;
   width: 100%;
