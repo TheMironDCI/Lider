@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@mixin mobile {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+
+section {
+    margin-bottom: 50px;
+}
+
+
+#first {
+    nav {
+        background-color: white;
+
+    }
+    nav.active {
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    .slider.active{
+        border: 5px solid red;
+        border-bottom-color: black;
+        border-right-color: black;
+    }
+    .slider {
+        margin-top: 100px;
+        transition-duration: .5s;
+        &:hover {
+            border-top-color: black;
+            border-left-color: black; 
+            border-bottom-color: red;
+            border-right-color: red;
+        }
+        padding: 30px;
+        overflow: hidden;
+        .carousale {
+            height: auto;
+            overflow-y: hidden;
+            @include mobile {
+                height: auto;
+            }
+        }
+    }
+    .carousel-item {
+        img{
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+    }
+}
+#second {
+    .about.active{
+        border: 5px solid red;
+        border-bottom-color: black;
+        border-right-color: black;
+    }
+    .about {
+        transition-duration: .5s;
+        &:hover {
+            border-top-color: black;
+            border-left-color: black; 
+            border-bottom-color: red;
+            border-right-color: red;
+        }
+        padding: 30px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+
+    }
+}
+#third {
+    .card.active{
+        border: 5px solid red;
+        border-bottom-color: black;
+        border-right-color: black;
+    }
+    .card {
+        transition-duration: .5s;
+        img {
+            margin-top: 10px;
+        }
+        .cardBtn {
+            z-index: 99;
+            background-color: red;
+            border: 5px solid black;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: white;
+            transition-duration: .3s;
+            &:hover {
+                color:black ;
+                background-color: transparent;
+                border-color: red;
+            }
+        }
+        &:hover {
+            border-top-color: black;
+            border-left-color: black; 
+            border-bottom-color: red;
+            border-right-color: red;
+
+
+        }
+        @include mobile {
+            margin: 20px auto;
+        }
+    }
+    .pro-color.active{
+        border: 5px solid red;
+        border-bottom-color: black;
+        border-right-color: black;
+    }
+    .pro-color {
+        margin-top: 100px;
+        width: 100%;
+        transition-duration: .5s;
+        &:hover {
+            border-top-color: black;
+            border-left-color: black; 
+            border-bottom-color: red;
+            border-right-color: red;
+        }
+        padding: 30px;
+        img {
+            width: 100% !important;
+        }
+    }
+}
+#fourth {
+    .contact {
+    margin-bottom: 20px;
+    }
+    .contactIcon {
+        color: black;
+        font-size: 28px;
+        margin-right: 20px;
+        background-color: rgba(255, 0, 0, 0.548);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .peopelsBox {
+        border: 5px solid red;
+        border-bottom-color: black;
+        border-right-color: black;
+        padding: 30px;
+        margin-right: 30px;
+        @include mobile {
+            margin: 20px 0;
+        }
+        img {
+            border: 1px solid black;
+            padding: 10px;
+            width: 100%;
+        }
+    }
+    .directors {
+        @include mobile {
+            display: block !important;
+        }
+    }
+}
+footer{
+    background-color: black;
+    padding: 20px 0;
+    color: white;
+}
